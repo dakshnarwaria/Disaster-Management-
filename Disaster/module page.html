@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans:wght@400;500;700;900&amp;family=Public+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Safety First - Modules</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+  :root {
+    --primary-color: #1e3a8a; /* dark blue */
+    --secondary-color: #2563eb; /* lighter blue */
+  }
+  .module-card {
+    @apply bg-[#1e293b] rounded-lg shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl;
+  }
+  .module-card .video-container {
+    @apply relative;
+  }
+  .module-card .video-overlay {
+    @apply absolute inset-0 bg-black/40 flex items-center justify-center;
+  }
+  .module-card .play-button {
+    @apply bg-white/20 text-white rounded-full p-4 backdrop-blur-sm transition-colors duration-300 hover:bg-white/30;
+  }
+  .module-card .module-content {
+    @apply p-6;
+  }
+</style>
+</head>
+<body class="bg-[#0f172a] text-gray-200">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden" style='font-family: "Public Sans","Noto Sans",sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-700 px-10 py-4 shadow-sm bg-[#1e293b]">
+  <div class="flex items-center gap-4 text-white">
+    <div class="size-8 text-[var(--secondary-color)]">
+      <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <h2 class="text-xl font-bold tracking-tighter">Safety First</h2>
+  </div>
+  <div class="flex flex-1 justify-end gap-8">
+    <nav class="flex items-center gap-8">
+      <a class="text-sm font-medium text-gray-300 hover:text-[var(--secondary-color)] transition-colors" href="#">Home</a>
+      <a class="text-sm font-medium text-[var(--secondary-color)]" href="#">Modules</a>
+      <a class="text-sm font-medium text-gray-300 hover:text-[var(--secondary-color)] transition-colors" href="#">Resources</a>
+      <a class="text-sm font-medium text-gray-300 hover:text-[var(--secondary-color)] transition-colors" href="#">Contact</a>
+    </nav>
+    <button class="flex min-w-[84px] max-w-[480px] items-center justify-center rounded-lg h-10 px-6 bg-[var(--secondary-color)] text-white text-sm font-bold shadow-sm hover:bg-blue-500 transition">
+      <span class="truncate">Login</span>
+    </button>
+  </div>
+</header>
+
+<!-- Main -->
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">Disaster Preparedness Modules</h1>
+      <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Engaging, interactive modules to educate and prepare you for various disaster scenarios.</p>
+    </div>
+
+    <!-- Module Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+      <!-- Earthquake -->
+      <div class="module-card">
+        <div class="video-container">
+          <img alt="Earthquake drill demonstration" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTtlV7Y8HhzQQ2oYQHvmMAjiQORsy73dIJJMuZAnJDZZmL2bMEscm6uLqfJ3o0C_aDmNnr1kqBv5e_KbvaPpu7R1aKVw35uwHoNDpUV83bqtxQL9Hu2WQYIxS2DHzmNNGte4M_JrQcMWuzSeEGSq4g2EpEocbavtFZ3o39HQiZDm92mWP-dTdrgBEd4h2XqCuv-ODAnCcCwL0SB9g1FSZIBa-KJQk_ZQdL6sakNvzMzBiXwpGrVaD6KBE0ONX5tOKno4NOkGymVQ"/>
+          <div class="video-overlay">
+            <button class="play-button">
+              <span class="material-symbols-outlined text-5xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+        <div class="module-content">
+          <h2 class="text-2xl font-bold text-white">Earthquake Preparedness</h2>
+          <p class="mt-2 text-gray-300">
+            Learn how to prepare for and respond to earthquakes. This module covers safety measures before, during, and after an earthquake, including securing your home, identifying safe spots, and first aid basics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Flood -->
+      <div class="module-card">
+        <div class="video-container">
+          <img alt="Flood safety drill demonstration" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO02yprfbp1aZvDqHq5YhS33VhYIPLj2p53BOeNRiZ_B2l0lMJzmh74ufZVsd1msPIEuWCCKbDyBCS3Fz8HXe7Ia5ga4opPh_U33rBfqEiiDWK7SHyirZEoqgJ9cqTi4wkbC63kD9JSlba-42UR10HKzaj4RnrbYC2u9SEnPN-FgtbPOcvgiSJ-s3aerrIUb0zblSg_GQ3Z4PIR9mnvFRX8706bbnm2-CWUyeWP7hwRsLX_GwhtwKDjpMkrEde2UnKb-7qbHBGlg"/>
+          <div class="video-overlay">
+            <button class="play-button">
+              <span class="material-symbols-outlined text-5xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+        <div class="module-content">
+          <h2 class="text-2xl font-bold text-white">Flood Safety</h2>
+          <p class="mt-2 text-gray-300">
+            Understand the risks associated with floods and how to stay safe. This module includes information on flood warnings, evacuation procedures, and post-flood recovery.
+          </p>
+        </div>
+      </div>
+
+      <!-- Fire -->
+      <div class="module-card">
+        <div class="video-container">
+          <img alt="Fire safety drill demonstration" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_g3v3c4LwjsRx2sNNKLX-rDDBP0AnddJp8kk138eACpUWdxETEKDcbKaFQkByqk9-CdoEBYCnbV2RQp3Dp5beRyan5tVCAjsHGAYnvufzY8pjmMJXsIvB_hsk8lasZ6Xli08-N7heVf-4L94U_OL9FXZJwSFpRJrPJbDZzQpXje3ofpYPAKOHtd0KsRTPZgZpghDif61pket8lnGIIqJYS9uvudBsisyuvBdmpYBHYGwozoOJ8zVt1VQK9v08YjzNdpZvZnrDKQ"/>
+          <div class="video-overlay">
+            <button class="play-button">
+              <span class="material-symbols-outlined text-5xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+        <div class="module-content">
+          <h2 class="text-2xl font-bold text-white">Fire Safety</h2>
+          <p class="mt-2 text-gray-300">
+            Learn essential fire safety tips, including how to prevent fires, what to do in case of a fire, and how to use a fire extinguisher. This module also covers evacuation plans and meeting points.
+          </p>
+        </div>
+      </div>
+
+      <!-- Severe Weather -->
+      <div class="module-card">
+        <div class="video-container">
+          <img alt="Severe weather preparedness drill demonstration" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD20wtldfVAQ6vimCpkDPfnm6LmndQdIpGi6qqhOMK3EQGlmZXytZ4_29bMerZ0tncyacTl8-G5VX4MT-5VAdFnckxMLHnduL8GlvszhcTl-w9yep6lvPReTQmBjcm97g2jqhayKZElBbBgEMOYnrUG2MXsDjTTb68_DsprunwAEVscATKGz1jBRpSjRmC2yURO7HgnOFghHG2SoGYNB9Mddp87wCzsfI4gKN2KRnmffkYokeB6LNQGs9j25p7uLvbhx8GA8V2DNQ"/>
+          <div class="video-overlay">
+            <button class="play-button">
+              <span class="material-symbols-outlined text-5xl">play_arrow</span>
+            </button>
+          </div>
+        </div>
+        <div class="module-content">
+          <h2 class="text-2xl font-bold text-white">Severe Weather Preparedness</h2>
+          <p class="mt-2 text-gray-300">
+            Prepare for severe weather conditions such as hurricanes, tornadoes, and thunderstorms. This module covers how to monitor weather forecasts, prepare emergency kits, and seek shelter.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+</div>
+</div>
+</body>
+</html>

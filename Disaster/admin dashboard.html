@@ -1,0 +1,217 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+</head>
+<body class="bg-gray-900">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex h-full grow">
+<div class="w-72 flex-shrink-0 bg-gray-900 p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-500 text-3xl">school</span>
+<h1 class="text-white text-xl font-bold">Disaster Prep</h1>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md bg-primary-500 text-white" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-800 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-sm font-medium">Users</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-800 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">book</span>
+<span class="text-sm font-medium">Modules</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-800 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<span class="text-sm font-medium">Quizzes</span>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-800 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-800 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="text-sm font-medium">Logout</span>
+</a>
+</div>
+</div>
+<main class="flex-1 bg-gray-950 p-8">
+<div class="max-w-7xl mx-auto">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-white">Dashboard</h1>
+<p class="text-gray-400 mt-2">Overview of user participation and performance in disaster preparedness quizzes and modules.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+<p class="text-gray-400 text-sm font-medium">Total Participants</p>
+<p class="text-white text-3xl font-bold mt-2">250</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+<p class="text-gray-400 text-sm font-medium">Average Score</p>
+<p class="text-white text-3xl font-bold mt-2">78%</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+<p class="text-gray-400 text-sm font-medium">Module Completion Rate</p>
+<p class="text-white text-3xl font-bold mt-2">85%</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-8">
+<div class="lg:col-span-2 bg-gray-900 p-6 rounded-lg border border-gray-800">
+<h2 class="text-lg font-semibold text-white mb-4">Quiz Scores Distribution</h2>
+<div class="grid grid-flow-col gap-4 items-end h-48 px-2">
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-gray-800 rounded-t-md" style="height: 45%;">
+<div class="bg-primary-500 w-full h-full rounded-t-md"></div>
+</div>
+<p class="text-gray-400 text-xs font-medium">0-20</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-gray-800 rounded-t-md" style="height: 25%;">
+<div class="bg-primary-500 w-full h-full rounded-t-md"></div>
+</div>
+<p class="text-gray-400 text-xs font-medium">21-40</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-gray-800 rounded-t-md" style="height: 60%;">
+<div class="bg-primary-500 w-full h-full rounded-t-md"></div>
+</div>
+<p class="text-gray-400 text-xs font-medium">41-60</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-gray-800 rounded-t-md" style="height: 80%;">
+<div class="bg-primary-500 w-full h-full rounded-t-md"></div>
+</div>
+<p class="text-gray-400 text-xs font-medium">61-80</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-gray-800 rounded-t-md" style="height: 90%;">
+<div class="bg-primary-500 w-full h-full rounded-t-md"></div>
+</div>
+<p class="text-gray-400 text-xs font-medium">81-100</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 bg-gray-900 p-6 rounded-lg border border-gray-800">
+<h2 class="text-lg font-semibold text-white mb-4">Module Completion Over Time</h2>
+<div class="h-48 relative">
+<svg class="absolute inset-0 w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 472 150" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_1131_5935_2)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="var(--primary-color)" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935_2" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="var(--primary-color)" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="var(--primary-color)" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="absolute bottom-0 w-full flex justify-around">
+<p class="text-gray-400 text-xs font-medium">Jan</p>
+<p class="text-gray-400 text-xs font-medium">Feb</p>
+<p class="text-gray-400 text-xs font-medium">Mar</p>
+<p class="text-gray-400 text-xs font-medium">Apr</p>
+<p class="text-gray-400 text-xs font-medium">May</p>
+<p class="text-gray-400 text-xs font-medium">Jun</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-semibold text-white mb-4">Top Performers</h2>
+<div class="overflow-x-auto rounded-lg border border-gray-800">
+<table class="min-w-full divide-y divide-gray-800">
+<thead class="bg-gray-800/50">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider" scope="col">Name</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider" scope="col">Institution</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider" scope="col">Score</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider" scope="col">Modules Completed</th>
+</tr>
+</thead>
+<tbody class="bg-gray-900 divide-y divide-gray-800">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">Ethan Harper</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Ridgeview College</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">95%</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-24 bg-gray-700 rounded-full h-1.5"><div class="bg-primary-500 h-1.5 rounded-full" style="width: 80%"></div></div>
+<span>4/5</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">Olivia Bennett</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Northwood High</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">92%</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-24 bg-gray-700 rounded-full h-1.5"><div class="bg-primary-500 h-1.5 rounded-full" style="width: 60%"></div></div>
+<span>3/5</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">Noah Carter</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Greenfield Academy</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">90%</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-24 bg-gray-700 rounded-full h-1.5"><div class="bg-primary-500 h-1.5 rounded-full" style="width: 100%"></div></div>
+<span>5/5</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">Ava Sullivan</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Westwood University</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">88%</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-24 bg-gray-700 rounded-full h-1.5"><div class="bg-primary-500 h-1.5 rounded-full" style="width: 40%"></div></div>
+<span>2/5</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">Liam Foster</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">Southridge Institute</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">85%</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-24 bg-gray-700 rounded-full h-1.5"><div class="bg-primary-500 h-1.5 rounded-full" style="width: 80%"></div></div>
+<span>4/5</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+        --primary-500: #1193d4;}
+      .bg-gray-950 { background-color: #0d121c; }
+      .bg-gray-900 { background-color: #111827; }
+      .bg-gray-800 { background-color: #1f2937; }
+      .text-gray-300 { color: #d1d5db; }
+      .text-gray-400 { color: #9ca3af; }
+      .border-gray-800 { border-color: #1f2937; }
+    </style>
+
+</body></html>

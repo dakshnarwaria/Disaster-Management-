@@ -1,0 +1,152 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1193d4;
+    }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+      -webkit-print-color-adjust: exact;
+      color-adjust: exact;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 font-sans">
+<div class="relative flex size-full min-h-screen flex-col text-white group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-800 px-10 py-4">
+<div class="flex items-center gap-4">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-xl font-bold tracking-tight">Safety First</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Resources</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Training</a>
+<a class="text-[var(--primary-color)] font-semibold" href="#">Emergency Contacts</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-gray-400">
+              notifications
+            </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKVfzpb2nNqmkDYQl49LKdxRK8Tf0siKXZaVZSgw5Lwzu0hKXMwHAJ5FeVXHtR-2Mx1a0ejGwAgGl84x436OpulK8fzYNRs1-sQzImVm88XFAsX2YJTRUuRPN78fPXY9BoTKGq2b9ghRkp6Mhwi0Cs1JNsroGUJ43QoB08F757f-WFDnyZr3BR9hAKjESGgatI1DxKh59HPTvkomp6z9Q3yvBNxTtGjvWvfbzM41Llv4injXZCfDcywbOCyF3OdYRpbPfLqmF9yQ");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+<div class="mx-auto max-w-5xl">
+<div class="text-center mb-12">
+<h1 class="text-4xl font-bold tracking-tighter sm:text-5xl">Emergency Contacts</h1>
+<p class="mt-4 max-w-2xl mx-auto text-gray-400 md:text-lg">
+              Quick access to essential services during emergencies. Filter by region or service type for faster response.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                public
+              </span>
+<select class="form-select appearance-none w-full rounded-md border border-gray-700 bg-gray-800 h-12 pl-10 pr-4 text-base placeholder:text-gray-400 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]">
+<option>Select Region</option>
+<option>North</option>
+<option>South</option>
+<option>East</option>
+<option>West</option>
+</select>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                medical_services
+              </span>
+<select class="form-select appearance-none w-full rounded-md border border-gray-700 bg-gray-800 h-12 pl-10 pr-4 text-base placeholder:text-gray-400 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]">
+<option>Select Service Type</option>
+<option>Police</option>
+<option>Ambulance</option>
+<option>Fire Department</option>
+</select>
+</div>
+</div>
+<div class="space-y-10">
+<div>
+<h2 class="text-2xl font-bold tracking-tight mb-6 border-b border-gray-800 pb-2">Essential Services</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:100">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">local_police</span>
+</div>
+<div>
+<h3 class="font-semibold">Police</h3>
+<p class="text-sm text-gray-400">Dial 100</p>
+</div>
+</a>
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:108">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">ambulance</span>
+</div>
+<div>
+<h3 class="font-semibold">Ambulance</h3>
+<p class="text-sm text-gray-400">Dial 108</p>
+</div>
+</a>
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:101">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">local_fire_department</span>
+</div>
+<div>
+<h3 class="font-semibold">Firefighting Team</h3>
+<p class="text-sm text-gray-400">Dial 101</p>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight mb-6 border-b border-gray-800 pb-2">Disaster-Specific Contacts</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:555-1234">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">flood</span>
+</div>
+<div>
+<h3 class="font-semibold">Flood Response</h3>
+<p class="text-sm text-gray-400">Call 555-1234</p>
+</div>
+</a>
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:555-5678">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">tsunami</span>
+</div>
+<div>
+<h3 class="font-semibold">Earthquake Response</h3>
+<p class="text-sm text-gray-400">Call 555-5678</p>
+</div>
+</a>
+<a class="group bg-gray-800/50 hover:bg-gray-800 rounded-md p-6 flex items-center gap-4 transition-all duration-300 transform hover:-translate-y-1" href="tel:555-9012">
+<div class="bg-gray-700 group-hover:bg-[var(--primary-color)] rounded-md flex items-center justify-center shrink-0 size-12 transition-colors">
+<span class="material-symbols-outlined text-2xl">forest</span>
+</div>
+<div>
+<h3 class="font-semibold">Wildfire Response</h3>
+<p class="text-sm text-gray-400">Call 555-9012</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>
