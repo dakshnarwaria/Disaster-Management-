@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-  <title>Disaster Watch</title>
-  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Map</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <style type="text/tailwindcss">
     :root {
@@ -14,26 +17,42 @@
     }
   </style>
 </head>
+
 <body class="bg-[#0b1e36] text-gray-100" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
   <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
     <div class="flex h-full grow flex-col">
-      
+
       <!-- Header -->
-      <header class="flex items-center justify-between whitespace-nowrap border-b border-gray-700 px-10 py-4 shadow-sm bg-[#102542]">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-gray-700 px-10 py-4 shadow-sm bg-[#102542]">
         <div class="flex items-center gap-4 text-gray-100">
           <div class="size-8 text-[var(--primary-color)]">
             <span class="material-symbols-outlined text-3xl">security</span>
           </div>
-          <h2 class="text-xl font-bold tracking-tighter">Disaster Watch</h2>
+          <h2 class="text-xl font-bold tracking-tighter">404 Founders</h2>
         </div>
         <div class="flex flex-1 justify-end gap-8">
           <nav class="flex items-center gap-8">
-            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
-            <a class="text-sm font-medium text-[var(--primary-color)]" href="#">Live Map</a>
-            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors" href="#">Resources</a>
-            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+            
+            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="homepage.html">Home</a>
+            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="module page.html">Modules</a>
+            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="quizz.html">Quiz</a>
+            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="admin dashboard.html">Dashboard</a>
+
+
+
+            <a class="text-sm font-medium text-[var(--primary-color)]" href="affected area map.html">Live Map</a>
+            <!-- <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="#">Resources</a> -->
+            <a class="text-sm font-medium text-gray-300 hover:text-[var(--primary-color)] transition-colors"
+              href="emergency contact.html">Emergency Contact</a>
           </nav>
-          <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold tracking-wide shadow-md hover:bg-sky-600 transition-colors">
+          <button
+            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold tracking-wide shadow-md hover:bg-sky-600 transition-colors">
             <span class="truncate">Login</span>
           </button>
         </div>
@@ -46,24 +65,30 @@
           <!-- Map Section -->
           <div class="flex-1 relative">
             <div class="absolute inset-0 bg-gray-800">
-              <img alt="Map of India" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfOFtLhYRwwsrkYj7MU-tXI6SQEod_Y2ho_vE20bbRv428QDx5i6q-sMRwbTQsCm_zWGJaY9ai-wnmTqbscau1ZN71J2FdmyiSW79jwiHTnhVOCIawBwayeZM-cWLj4VaOuGWmx6KdE7yTvuArzmdua8-2T3yTOe10TPTxeheb28-0XgLDaoOOjZJGPAh9dmVmbZqH7YAiJKZIlomn_UXYqqzEwhtgZgkbLFHn5wmPfpFTZuwqld4Uno-2gxXPtda4Xy1H8vUfw"/>
+              <img alt="Map of India" class="w-full h-full object-cover opacity-80"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfOFtLhYRwwsrkYj7MU-tXI6SQEod_Y2ho_vE20bbRv428QDx5i6q-sMRwbTQsCm_zWGJaY9ai-wnmTqbscau1ZN71J2FdmyiSW79jwiHTnhVOCIawBwayeZM-cWLj4VaOuGWmx6KdE7yTvuArzmdua8-2T3yTOe10TPTxeheb28-0XgLDaoOOjZJGPAh9dmVmbZqH7YAiJKZIlomn_UXYqqzEwhtgZgkbLFHn5wmPfpFTZuwqld4Uno-2gxXPtda4Xy1H8vUfw" />
             </div>
 
             <!-- Alert Markers -->
             <div class="absolute inset-0">
-              <div class="absolute top-[25%] left-[30%] w-16 h-16 rounded-full bg-red-500/50 flex items-center justify-center animate-pulse">
+              <div
+                class="absolute top-[25%] left-[30%] w-16 h-16 rounded-full bg-red-500/50 flex items-center justify-center animate-pulse">
                 <div class="w-10 h-10 rounded-full bg-red-500/80"></div>
               </div>
-              <div class="absolute top-[40%] left-[60%] w-12 h-12 rounded-full bg-yellow-400/50 flex items-center justify-center animate-pulse delay-200">
+              <div
+                class="absolute top-[40%] left-[60%] w-12 h-12 rounded-full bg-yellow-400/50 flex items-center justify-center animate-pulse delay-200">
                 <div class="w-8 h-8 rounded-full bg-yellow-400/80"></div>
               </div>
-              <div class="absolute top-[65%] left-[45%] w-10 h-10 rounded-full bg-green-500/50 flex items-center justify-center animate-pulse delay-500">
+              <div
+                class="absolute top-[65%] left-[45%] w-10 h-10 rounded-full bg-green-500/50 flex items-center justify-center animate-pulse delay-500">
                 <div class="w-6 h-6 rounded-full bg-green-500/80"></div>
               </div>
-              <div class="absolute bottom-[15%] right-[25%] w-20 h-20 rounded-full bg-red-500/50 flex items-center justify-center animate-pulse delay-300">
+              <div
+                class="absolute bottom-[15%] right-[25%] w-20 h-20 rounded-full bg-red-500/50 flex items-center justify-center animate-pulse delay-300">
                 <div class="w-14 h-14 rounded-full bg-red-500/80"></div>
               </div>
-              <div class="absolute bottom-[30%] right-[50%] w-14 h-14 rounded-full bg-yellow-400/50 flex items-center justify-center animate-pulse delay-100">
+              <div
+                class="absolute bottom-[30%] right-[50%] w-14 h-14 rounded-full bg-yellow-400/50 flex items-center justify-center animate-pulse delay-100">
                 <div class="w-8 h-8 rounded-full bg-yellow-400/80"></div>
               </div>
             </div>
@@ -72,32 +97,44 @@
             <div class="absolute top-4 left-4 z-10 w-full max-w-xs">
               <label class="relative flex items-center">
                 <span class="material-symbols-outlined absolute left-3 text-gray-400">search</span>
-                <input class="form-input w-full rounded-full border-gray-600 bg-[#0f223d] py-2.5 pl-10 pr-4 text-gray-200 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search locations in India..." type="search"/>
+                <input
+                  class="form-input w-full rounded-full border-gray-600 bg-[#0f223d] py-2.5 pl-10 pr-4 text-gray-200 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]"
+                  placeholder="Search locations in India..." type="search" />
               </label>
             </div>
 
             <!-- Map Controls -->
             <div class="absolute bottom-4 right-4 z-10 flex flex-col items-center gap-2">
               <div class="flex flex-col rounded-lg bg-[#142a4a] shadow-md border border-gray-700">
-                <button class="flex size-12 items-center justify-center hover:bg-[#1b3558] rounded-t-lg transition-colors">
+                <button
+                  class="flex size-12 items-center justify-center hover:bg-[#1b3558] rounded-t-lg transition-colors">
                   <span class="material-symbols-outlined text-gray-300">add</span>
                 </button>
-                <button class="flex size-12 items-center justify-center border-t border-gray-700 hover:bg-[#1b3558] rounded-b-lg transition-colors">
+                <button
+                  class="flex size-12 items-center justify-center border-t border-gray-700 hover:bg-[#1b3558] rounded-b-lg transition-colors">
                   <span class="material-symbols-outlined text-gray-300">remove</span>
                 </button>
               </div>
-              <button class="flex size-12 items-center justify-center rounded-lg bg-[#142a4a] border border-gray-700 shadow-md hover:bg-[#1b3558] transition-colors">
+              <button
+                class="flex size-12 items-center justify-center rounded-lg bg-[#142a4a] border border-gray-700 shadow-md hover:bg-[#1b3558] transition-colors">
                 <span class="material-symbols-outlined text-gray-300">my_location</span>
               </button>
             </div>
 
             <!-- Legend -->
-            <div class="absolute bottom-4 left-4 z-10 rounded-lg bg-[#142a4a]/90 p-4 shadow-md backdrop-blur-sm border border-gray-700">
+            <div
+              class="absolute bottom-4 left-4 z-10 rounded-lg bg-[#142a4a]/90 p-4 shadow-md backdrop-blur-sm border border-gray-700">
               <h3 class="text-sm font-semibold text-gray-100 mb-2">Alert Level Legend</h3>
               <div class="flex flex-col gap-2 text-sm text-gray-300">
-                <div class="flex items-center gap-2"><span class="size-4 rounded-full bg-red-500 border-2 border-gray-900 shadow-sm"></span> <span>High Alert</span></div>
-                <div class="flex items-center gap-2"><span class="size-4 rounded-full bg-yellow-400 border-2 border-gray-900 shadow-sm"></span> <span>Medium Alert</span></div>
-                <div class="flex items-center gap-2"><span class="size-4 rounded-full bg-green-500 border-2 border-gray-900 shadow-sm"></span> <span>Low Alert</span></div>
+                <div class="flex items-center gap-2"><span
+                    class="size-4 rounded-full bg-red-500 border-2 border-gray-900 shadow-sm"></span> <span>High
+                    Alert</span></div>
+                <div class="flex items-center gap-2"><span
+                    class="size-4 rounded-full bg-yellow-400 border-2 border-gray-900 shadow-sm"></span> <span>Medium
+                    Alert</span></div>
+                <div class="flex items-center gap-2"><span
+                    class="size-4 rounded-full bg-green-500 border-2 border-gray-900 shadow-sm"></span> <span>Low
+                    Alert</span></div>
               </div>
             </div>
           </div>
@@ -142,7 +179,8 @@
                     <div class="flex-1">
                       <div class="flex justify-between items-center">
                         <h4 class="font-semibold text-gray-100">Heatwave</h4>
-                        <span class="text-xs text-orange-400 font-bold bg-orange-900/40 px-2 py-0.5 rounded-full">ESCALATED</span>
+                        <span
+                          class="text-xs text-orange-400 font-bold bg-orange-900/40 px-2 py-0.5 rounded-full">ESCALATED</span>
                       </div>
                       <p class="text-sm text-gray-300">Rajasthan &amp; Gujarat</p>
                       <p class="text-xs text-gray-500 mt-1">Updated 30 minutes ago</p>
@@ -187,4 +225,5 @@
     </div>
   </div>
 </body>
+
 </html>
